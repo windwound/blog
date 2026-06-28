@@ -1,0 +1,47 @@
+baseURL: "https://blog.example.com/"
+locale: "zh-CN"
+title: "达达的博客"
+theme: "PaperMod"
+
+params:
+  author: "达达"
+  description: "十年 Java 后端老兵的技术笔记"
+  defaultTheme: auto
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowToc: true
+
+  homeInfoParams:
+    Title: "👋 你好，我是达达"
+    Content: >
+      十年 Java 后端老鸟，专注 Spring 生态、微服务、分布式架构。
+      
+      这里记录技术笔记和踩坑经验。
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/"
+
+menu:
+  main:
+    - identifier: posts
+      name: 文章
+      url: /posts/
+      weight: 10
+    - identifier: tags
+      name: 标签
+      url: /tags/
+      weight: 20
+    - identifier: search
+      name: 搜索
+      url: /search/
+      weight: 30
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
